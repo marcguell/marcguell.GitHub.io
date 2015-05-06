@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>CRISPR-GA</title>
 
+
     <!-- ADD Libraries-->
     <script src="libs/d3/d3.min.js" charset="utf-8"></script>
     <script src="libs/jquery/jquery-2.1.1.min.js" charset="utf-8"></script>
@@ -28,20 +29,23 @@
 <body>
     <div class="container">
         <h1>CRISPR-GA</h1>
-        <div>
-            <input type="radio" name="indels" value="both" id="both" checked>Both
-            <input type="radio" name="indels" value="deletions" id="deletion">Deletions
-            <input type="radio" name="indels" value="insertions" id="insertion">Insertions<br>
-        </div>
+            <div>
+        <h4>Reference: </h4>
+        <a href="http://bioinformatics.oxfordjournals.org/content/early/2014/06/30/bioinformatics.btu427.full.pdf">Guell M, Yang L, Church G (2014) Genome Editing Assessment using CRISPR Genome Analyzer (CRISPR-GA) <i>Bioinformatics.</i></a><br>
+        <a href="http://crispr-ga.net">CRISPR-GA current website</a>
+    </div>
+       
 
         <div class="row">
             <div id="parent" class="col-md-8 col-sm-12">
                <p> The following visualization shows the results of a gene editing experiment</p>
                <div id="popup" style="display: none"><p>Select an area of interest for zoom</p></div>
-
-
-
             </div>
+ <div>
+            <input type="radio" name="indels" value="both" id="both" checked>Both
+            <input type="radio" name="indels" value="deletions" id="deletion">Deletions
+            <input type="radio" name="indels" value="insertions" id="insertion">Insertions<br>
+        </div>
 
         </div>
 
@@ -143,5 +147,7 @@
             return parseInt(style.getPropertyValue('width'));
         }
     </script>
+
+
 </body>
 </html>
