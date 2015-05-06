@@ -293,11 +293,12 @@ CountVis.prototype.addDonut = function(svg){
 
 
     var tooltip=g.append("text")
-    .attr("transform", "translate(" +0 / 2 + "," + height / 2 + ")")
+    .attr("transform", "translate(-" +3*width + "," + height/2  + ")")
     .style("visibility", "hidden")
     .attr("dy", ".50em")
     .attr("fill","black")
     .attr("font-weight","bold")
+    .classed("top", true)
     .text("Homologous recombination (HR) percentage, and non-homologous end-joining (NHEJ)");
 
     g.append("path")

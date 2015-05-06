@@ -17,6 +17,10 @@ span.dropt:hover span {margin: 20px 0 0 170px; background: #ffffff; z-index:6;}
     font: 10px sans-serif;
 }
 
+.top {
+    fill: red;
+    z-index: 100;
+}
 .axis line,
 .axis path {
     fill: none;
